@@ -1,0 +1,29 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "Project created in order to learn Tailwind Css",
+  "main": "postcss.config.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/said-alrove/tailwindcss.git"
+  },
+  "keywords": [
+    "Tailwind Css"
+  ],
+  "author": "Said Alejandro <saidmift@outlook.es>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/said-alrove/tailwindcss/issues"
+  },
+  "homepage": "https://github.com/said-alrove/tailwindcss#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.19",
+    "vite": "^2.6.13"
+  }
+}
