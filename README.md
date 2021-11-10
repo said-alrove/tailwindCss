@@ -1,5 +1,5 @@
 # [**TailwindCSS**](tailwindcss.com/docs/installation)
-This is a repository created in order to learn how to use [Tailwind Css](https://tailwindcss.com) in deep, all the key information will be added to this README file.
+This is a repository created in order to learn how to use [**Tailwind Css**](https://tailwindcss.com) in deep, all the key information will be added to this README file.
 
 ## Table of contents
 - [**CDN**](#cdn)
@@ -7,7 +7,7 @@ This is a repository created in order to learn how to use [Tailwind Css](https:/
 - [**Vite**](#vite)
 - [**Resources**](#resources)
 
-![](https://raw.githubusercontent.com/bradlc/vscode-tailwindcss/master/packages/vscode-tailwindcss/.github/banner-dark.png)
+![](https://laravelnews.imgix.net/images/tailwindcss.png?ixlib=php-3.3.1)
 
 ## [**CDN**](https://tailwindcss.com/docs/installation#using-tailwind-via-cdn) 
 Tailwind can be used without configuring anything just by adding the file via CDN. This isn't recommended due to you're loading all the file without considering how much of it will be used in the project, this may be useful only when making MVPs of ideas (to make it faster).
