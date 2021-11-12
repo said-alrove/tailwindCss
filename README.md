@@ -26,13 +26,13 @@ Tailwind can also be added by the console by using [Node.js](https://nodejs.org/
     npm install tailwind
 ```
 
-And then run **npx tailwind -o styles.css**, this will generate the default output file.
+And then, run the **npx tailwind -o styles.css** command, this will generate the default output file.
 
 ```
     npx tailwind -o styles.css
 ```
 
-> **Note:** using the console allows you to have more opportunities of personalization with respect to the output, the options will be listed if the **npx tailwind --help** is typed.
+> **Note:** using the console allows you to have more opportunities of personalization in terms of the output file, the options will be listed if the **npx tailwind --help** command is typed.
 
 ### [**Npx or Npm?**](https://www.it-swarm-es.com/es/javascript/diferencia-entre-npx-y-npm/838393291/)
 The differences between **Npx** and **Npm** aren't too much difficult, **Npm** as the name says is a Node Package Manager, that means that it's in charge of managing *(download, upload, etc.)* the use of Npm packages and it can ONLY execute their commands if they're installed globally or if the commands are specified on the package.json file *(on the **scripts** key)*. When the packages are installed globally you don't have to use the **npm** command, instead, you can directly use the package's commands without a prefix or something else.
@@ -54,7 +54,7 @@ The differences between **Npx** and **Npm** aren't too much difficult, **Npm** a
     npx tailwind -o styles.css
 ```
 
-> **Note:** There are more options than just **-o**, if you'd like to also specify an input file to configure what should be load in the output one *(this will be explained more in detail in the next section)*, then, use the **-i** flag. To list the full available commands use the **tailwind -h** command.
+> **Note:** There are more options than just **-o**, if you'd like to also specify an input file to configure what should be loaded in the output one *(this will be explained more in detail in the next section)*, then, use the **-i** flag. To list the full available commands use the **tailwind -h** command.
 
 ```
     tailwind -h
@@ -84,10 +84,10 @@ As the third option you have the possibility of use Tailwind alongside a tasks r
 * Then, you'll need to install the **tailwindcss**, **postcss**, **autoprefixer** and **vite** dependencies.
 
 ```
-    npm install -D (--save-dev) tailwindcss postcss autoprefixer vite
+    npm install -D (--save-dev) tailwind postcss autoprefixer vite
 ```
 
-* Just after it you'll have to build a TailwindCSS config file for postcss *(which you can do by using Tailwind cli)* by using the **npx tailwindcss init -p** (the -p stands for --postcss).
+* Just after it you'll have to build the TailwindCss config file as well as the PostCss one *(which you can do by using the Tailwind-cli)* by running the **npx tailwind init -p** (the -p stands for --postcss).
 
 ```
     npx tailwindcss init -p
@@ -95,7 +95,7 @@ As the third option you have the possibility of use Tailwind alongside a tasks r
 
 This command will create two config files, one called **postcss.config.js** and other **tailwind.config.js**, the former will be the place where you'll be able to costumize PostCss, the latter will be the place where you'll have to come for costumize Tailwind.
 
-* Continuing, the next step is to run a server with vite which you'll be able to do by running the **npm run dev** command. Here's important to add *"dev": "vite"* to the **scripts** section on the package.json file first.
+* Continuing, the next step is to run a server with vite which you'll be able to do by running the **npm run dev** command. Here's important to first add *"dev": "vite"* to the **scripts** key on the package.json file. This will allos us to run the command with **npm**.
 
 ```
     npm run dev
@@ -108,15 +108,17 @@ Now, after the creation of both config files, **tailwind.config.js** and **postc
     npm install -g postcss-cli
 ```
 
+> **Note:** here the installation of **postcss-cli** is globally, that's the reason why we're gonna use the commands without any prefix, but as advice I'd recommend you to install the package as a *dev dependency*.
+
 Just then what'll be next is to run the compilation based on the **postcss.config.js** file, you get that by doing this:
 
 ```
     postcss postcss.config.js input.css -o output.css 
 ```
 
-Something important that I added to the project was the PostCSS plugin **import** in order to use the **@import** at-rule to load the Tailwind layers instead of the **@tailwind** directive.
+Something important that I added to the project was the PostCSS plugin **import** in order to use the **@import** at-rule instead of the **@tailwind** directive to load the Tailwind layers.
 
-> **Note:** when you are ready for production you should compile only those classes that were used in order to optimize the final version of the stylesheet, you get this by using the **purge** object/array within the **tailwind.config.js** file.
+> **Note:** when you are ready for production you should compile only those classes that were used in order to optimize the final version of the stylesheet, you get this by using the **purge** object within the **tailwind.config.js** file.
 
 ## Resources 📚
 - [Installation](https://tailwindcss.com/docs/installation)
