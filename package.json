@@ -5,7 +5,8 @@
   "main": "postcss.config.js",
   "scripts": {
     "dev": "vite",
-    "styles": "tailwind -i tailwind/app.css -o styles/app.css -m --purge index.html --config tailwind.config.js"
+    "tailwind": "tailwind -i tailwind/app.css -o styles/app.css -m --purge index.html --config tailwind.config.js",
+    "postcss": "postcss tailwind/app.css -o styles/app.css --config postcss.config.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
     "postcss-import": "^14.0.2",
     "tailwindcss": "^2.2.19",
     "vite": "^2.6.13"
