@@ -8,7 +8,7 @@ This is a repository created in order to learn how to use [**Tailwind Css**](htt
 - [**Input file**](#input-file)
 - [**Vite**](#vite)
 - [**PostCss**](#postcss)
-- [**Context](#context)
+- [**Context**](#context)
 - [**Resources**](#resources)
 
 ![](https://laravelnews.imgix.net/images/tailwindcss.png?ixlib=php-3.3.1)
