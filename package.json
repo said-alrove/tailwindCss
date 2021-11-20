@@ -5,8 +5,9 @@
   "main": "postcss.config.js",
   "scripts": {
     "dev": "vite",
-    "tailwind": "tailwindcss -i tailwind/app.css -m --purge index.html --postcss postcss.config.js -o styles/app.css",
-    "postcss": "postcss tailwind/app.css -m --config postcss.config.js -o styles/app.css"
+    "styles": "tailwindcss -i tailwind/app.css -m --postcss postcss.config.js -o styles/app.css",
+    "styles:dev": "postcss tailwind/app.css -m --env=development --config postcss.config.js -o styles/app.css",
+    "styles:dist": "postcss tailwind/app.css -m --env=production --config postcss.config.js -o styles/app.css"
   },
   "repository": {
     "type": "git",
