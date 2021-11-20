@@ -7,7 +7,9 @@
     "dev": "vite",
     "styles": "tailwindcss -i tailwind/app.css -m --postcss postcss.config.js -o styles/app.css",
     "styles:dev": "postcss tailwind/app.css -m --env=development --config postcss.config.js -o styles/app.css",
-    "styles:dist": "postcss tailwind/app.css -m --env=production --config postcss.config.js -o styles/app.css"
+    "styles:dist": "postcss tailwind/app.css -m --env=production --config postcss.config.js -o styles/app.css",
+    "default": "gulp",
+    "default:watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.0",
     "cssnano": "^5.0.10",
+    "gulp": "^4.0.2",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.2",
     "postcss-import": "^14.0.2",
