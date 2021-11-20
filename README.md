@@ -130,6 +130,8 @@ You can use a [**conditional ternary operator**](https://developer.mozilla.org/e
 
 ![](static/cssnanoCtx.png)
 
+> You have to complement this with the **--env=production** flag on the script located on the package.json file.
+
 ## Resources 📚
 - [Installation](https://tailwindcss.com/docs/installation)
 - [Optimizing for production](https://tailwindcss.com/docs/optimizing-for-production)
